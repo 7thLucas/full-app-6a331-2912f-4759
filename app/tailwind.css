@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #0f172a;
+    --card: #ffffff;
+    --card-foreground: #0f172a;
+    --popover: #ffffff;
+    --popover-foreground: #0f172a;
+    --primary: #0f766e;
+    --primary-foreground: #ffffff;
+    --secondary: #f0fdfa;
+    --secondary-foreground: #0f766e;
+    --muted: #f1f5f9;
+    --muted-foreground: #64748b;
+    --accent: #f0fdfa;
+    --accent-foreground: #0f766e;
+    --destructive: #ef4444;
+    --destructive-foreground: #fafafa;
+    --border: #e2e8f0;
+    --input: #e2e8f0;
+    --ring: #0f766e;
+    --radius: 0.75rem;
+    --navbar-background: #ffffff;
+    --sidebar-background: #ffffff;
+    --sidebar-foreground: #475569;
+    --sidebar-primary: #0f766e;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: #f0fdfa;
+    --sidebar-accent-foreground: #0f766e;
+    --sidebar-border: #e2e8f0;
+    --sidebar-ring: #0f766e;
+  }
+
+  .dark {
+    --background: #0f172a;
+    --foreground: #f1f5f9;
+    --card: #1e293b;
+    --card-foreground: #f1f5f9;
+    --popover: #1e293b;
+    --popover-foreground: #f1f5f9;
+    --primary: #14b8a6;
+    --primary-foreground: #ffffff;
+    --secondary: #1e293b;
+    --secondary-foreground: #f1f5f9;
+    --muted: #1e293b;
+    --muted-foreground: #94a3b8;
+    --accent: #1e293b;
+    --accent-foreground: #f1f5f9;
+    --destructive: #ef4444;
+    --destructive-foreground: #fafafa;
+    --border: #334155;
+    --input: #334155;
+    --ring: #14b8a6;
+    --navbar-background: #0f172a;
+    --sidebar-background: #0f172a;
+    --sidebar-foreground: #94a3b8;
+    --sidebar-primary: #14b8a6;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: #1e293b;
+    --sidebar-accent-foreground: #f1f5f9;
+    --sidebar-border: #334155;
+    --sidebar-ring: #14b8a6;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-slate-50 text-foreground;
+    font-family: 'Inter', 'Plus Jakarta Sans', 'Poppins', sans-serif;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
