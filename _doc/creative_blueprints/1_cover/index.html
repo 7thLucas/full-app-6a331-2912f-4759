@@ -1,0 +1,74 @@
+<style>
+  .sl-layout { display: flex; height: 100%; }
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+
+  .mode-landscape .sl-content {
+    width: 54%;
+    padding: 2.75rem 2.5rem 2.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .mode-portrait .sl-content {
+    padding: 2.5rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+  }
+
+  .mode-landscape .sl-visual {
+    width: 46%;
+    position: relative;
+    overflow: hidden;
+  }
+  .mode-portrait .sl-visual {
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+  }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout">
+
+    <!-- Left: Content -->
+    <div class="sl-content">
+
+      <!-- Top: Category chip -->
+      <div>
+        <span class="inline-flex items-center gap-1.5 bg-teal-50 text-teal-700 text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full border border-teal-200">
+          Clinic Management
+        </span>
+      </div>
+
+      <!-- Middle: Headline + tagline -->
+      <div>
+        <h1 class="font-black text-slate-900 leading-none mb-4" style="font-size:3rem;">
+          Less Wait.<br>Better Care.
+        </h1>
+        <p class="text-slate-600 leading-relaxed" style="font-size:1rem; max-width:300px;">
+          The unified admin platform that brings patient records, appointments, and prescriptions together — so your clinic runs on focus, not friction.
+        </p>
+      </div>
+
+      <!-- Bottom: Attribution -->
+      <div>
+        <data-attribution />
+      </div>
+
+    </div>
+
+    <!-- Right: Visual -->
+    <div class="sl-visual">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=modern%20minimal%20clinic%20reception%20desk%20with%20digital%20tablet%20showing%20a%20clean%20patient%20scheduling%20interface%2C%20teal%20and%20white%20healthcare%20interior%2C%20calm%20professional%20atmosphere%2C%20soft%20warm%20lighting"
+        alt="Clinic management platform"
+        class="w-full h-full object-cover"
+      />
+      <!-- Blend into white content column -->
+      <div class="absolute inset-0" style="background: linear-gradient(to right, white 0%, transparent 28%);"></div>
+    </div>
+
+  </div>
+</section>
