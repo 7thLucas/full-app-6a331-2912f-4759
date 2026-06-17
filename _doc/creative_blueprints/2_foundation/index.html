@@ -1,0 +1,67 @@
+<style>
+  .sl-wrap { display: flex; height: 100%; }
+  .mode-landscape .sl-wrap { flex-direction: row; padding: 2.5rem 3rem; gap: 2.5rem; align-items: center; }
+  .mode-portrait .sl-wrap { flex-direction: column; padding: 2rem; gap: 1.5rem; }
+
+  .mode-landscape .sl-narrative { width: 55%; display: flex; flex-direction: column; gap: 1.25rem; }
+  .mode-portrait .sl-narrative { width: 100%; display: flex; flex-direction: column; gap: 1rem; }
+
+  .mode-landscape .sl-visual { width: 45%; height: 100%; position: relative; overflow: hidden; border-radius: 1.25rem; }
+  .mode-portrait .sl-visual { display: none; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-wrap">
+
+    <!-- Left: Problem + Solution narrative -->
+    <div class="sl-narrative">
+
+      <!-- Section badge + headline -->
+      <div>
+        <span class="inline-block bg-teal-50 text-teal-700 text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full border border-teal-200 mb-2">The Challenge</span>
+        <h2 class="font-black text-slate-900 leading-tight" style="font-size:1.85rem;">
+          Small clinics deserve<br>better than paper and chaos.
+        </h2>
+      </div>
+
+      <!-- Problem block -->
+      <div class="rounded-2xl p-4" style="background:#fff5f5; border:1px solid #fecaca;">
+        <div class="flex items-center gap-2 mb-2.5">
+          <div class="w-6 h-6 rounded-full flex items-center justify-center" style="background:#fee2e2;">
+            <span class="font-black text-xs" style="color:#ef4444;">✗</span>
+          </div>
+          <h3 class="font-bold text-slate-900 text-sm">The Problem</h3>
+        </div>
+        <ul class="space-y-1.5">
+          <li class="flex gap-2 text-xs text-slate-700 leading-snug"><span style="color:#f87171; margin-top:2px;">●</span>Patient records, appointments, and prescriptions live in disconnected silos</li>
+          <li class="flex gap-2 text-xs text-slate-700 leading-snug"><span style="color:#f87171; margin-top:2px;">●</span>Manual lookups and paper files slow every check-in and consultation</li>
+          <li class="flex gap-2 text-xs text-slate-700 leading-snug"><span style="color:#f87171; margin-top:2px;">●</span>Scheduling conflicts and double-bookings damage patient trust</li>
+          <li class="flex gap-2 text-xs text-slate-700 leading-snug"><span style="color:#f87171; margin-top:2px;">●</span>No live view of patient flow — staff always react, never prepare</li>
+        </ul>
+      </div>
+
+      <!-- Solution block -->
+      <div class="rounded-2xl p-4" style="background:#f0fdfa; border:1px solid #99f6e4;">
+        <div class="flex items-center gap-2 mb-2.5">
+          <div class="w-6 h-6 bg-teal-600 rounded-full flex items-center justify-center">
+            <span class="font-black text-white text-xs">✓</span>
+          </div>
+          <h3 class="font-bold text-slate-900 text-sm">The Solution</h3>
+        </div>
+        <p class="text-xs text-slate-700 leading-relaxed">
+          A single admin hub connecting every step of the patient journey — booking, check-in, record access, consultation, and prescription. Clinic staff get instant access to what they need, when they need it. Less friction. Fewer errors. Shorter waits.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Right: Supporting visual -->
+    <div class="sl-visual">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=focused%20clinic%20administrator%20using%20a%20clean%20digital%20healthcare%20dashboard%20on%20a%20modern%20tablet%2C%20organized%20medical%20office%2C%20teal%20accent%20tones%2C%20professional%20calm%20healthcare%20workflow%2C%20soft%20natural%20light"
+        alt="Clinic admin using digital platform"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+  </div>
+</section>
