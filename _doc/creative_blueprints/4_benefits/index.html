@@ -1,0 +1,77 @@
+<style>
+  .sl-page {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .mode-landscape .sl-page { padding: 2.5rem 3rem 2.25rem 3rem; }
+  .mode-portrait .sl-page { padding: 2rem; }
+
+  .sl-cards {
+    display: grid;
+    gap: 1rem;
+    flex: 1;
+  }
+  .mode-landscape .sl-cards { grid-template-columns: repeat(4, 1fr); margin-bottom: 1rem; }
+  .mode-portrait .sl-cards { grid-template-columns: repeat(2, 1fr); }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-page">
+
+    <!-- Header -->
+    <div class="mb-4">
+      <span class="inline-block bg-teal-50 text-teal-700 text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full border border-teal-200 mb-2">Outcomes</span>
+      <h2 class="font-black text-slate-900 leading-tight" style="font-size:1.75rem;">Real impact, every single day.</h2>
+    </div>
+
+    <!-- Metric cards -->
+    <div class="sl-cards">
+
+      <!-- Wait Time -->
+      <div class="bg-white border border-slate-100 rounded-2xl p-4 shadow-sm flex flex-col justify-between">
+        <div>
+          <span class="inline-block bg-teal-50 text-teal-600 text-xs font-semibold px-2 py-0.5 rounded-full mb-3">Wait Time</span>
+          <p class="font-black text-slate-900 leading-tight mb-2" style="font-size:1.3rem;">Faster patient<br>flow</p>
+          <p class="text-xs text-slate-500 leading-relaxed">Instant record access and live queue visibility eliminate the scramble before every consultation.</p>
+        </div>
+      </div>
+
+      <!-- Scheduling -->
+      <div class="bg-white border border-slate-100 rounded-2xl p-4 shadow-sm flex flex-col justify-between">
+        <div>
+          <span class="inline-block bg-teal-50 text-teal-600 text-xs font-semibold px-2 py-0.5 rounded-full mb-3">Scheduling</span>
+          <p class="font-black text-slate-900 leading-tight mb-2" style="font-size:1.3rem;">Zero double-<br>bookings</p>
+          <p class="text-xs text-slate-500 leading-relaxed">Live slot availability and automatic conflict alerts prevent the overlaps that waste staff and patient time.</p>
+        </div>
+      </div>
+
+      <!-- Care Quality — highlighted -->
+      <div class="bg-teal-600 rounded-2xl p-4 shadow-sm flex flex-col justify-between">
+        <div>
+          <span class="inline-block text-xs font-semibold px-2 py-0.5 rounded-full mb-3" style="background:rgba(255,255,255,0.18); color:#ccfbf1;">Care Quality</span>
+          <p class="font-black text-white leading-tight mb-2" style="font-size:1.3rem;">Complete patient<br>context</p>
+          <p class="text-xs leading-relaxed" style="color:#99f6e4;">Medical history, allergies, and prescription records are visible the moment a patient record is opened.</p>
+        </div>
+      </div>
+
+      <!-- Staff Clarity -->
+      <div class="bg-white border border-slate-100 rounded-2xl p-4 shadow-sm flex flex-col justify-between">
+        <div>
+          <span class="inline-block bg-teal-50 text-teal-600 text-xs font-semibold px-2 py-0.5 rounded-full mb-3">Staff Clarity</span>
+          <p class="font-black text-slate-900 leading-tight mb-2" style="font-size:1.3rem;">One source<br>of truth</p>
+          <p class="text-xs text-slate-500 leading-relaxed">Admin, doctors, and support staff all see the same patient status — no crossed wires, no missed updates.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ROI summary bar -->
+    <div class="rounded-2xl px-5 py-3 flex items-center gap-4" style="background:#f0fdfa; border:1px solid #99f6e4;">
+      <div class="w-8 h-8 bg-teal-600 rounded-xl flex items-center justify-center text-white font-black text-sm flex-shrink-0">↑</div>
+      <p class="text-sm text-slate-700 leading-snug">
+        <span class="font-bold text-slate-900">The compounding effect:</span> when records, scheduling, and prescriptions share one system, every saved minute multiplies — across every patient, every day.
+      </p>
+    </div>
+
+  </div>
+</section>
