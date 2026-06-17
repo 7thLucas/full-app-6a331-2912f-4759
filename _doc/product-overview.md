@@ -1,0 +1,1 @@
+Build me an app for small clinic administrators to help them manage patient records, appointments, and prescriptions with the goal to reduce patient wait times and improve care quality
