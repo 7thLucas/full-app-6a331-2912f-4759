@@ -37,8 +37,10 @@ A single admin hub that connects every step of the patient journey — from book
 - **Audience**: Non-technical clinic administrators and practitioners in small, independent clinics
 - **Aesthetic**: Healthcare-appropriate — clear typography, restrained colour, efficient layouts
 
-## Scope (MVP)
-- Patient records (create, view, edit, search)
-- Appointment scheduling (calendar view, booking, conflict detection)
-- Prescription issuance and history (linked to patient records)
-- Daily patient flow dashboard (live status tracking, real-time clinic overview)
+## Scope (MVP) — Shipped
+- Patient records (create, view, edit, search; medical history, allergies, emergency contacts)
+- Appointment scheduling (day-navigator view, booking, conflict detection, one-click status transitions)
+- Prescription issuance and history (multi-medication, lifecycle tracking, linked to patient records and appointments)
+- Daily patient flow dashboard (live status tracking, urgent-patient alerts, quick-action links)
+- Authentication (JWT-based login/logout, role-based access, auto-seeded admin account)
+- Clinic configurables (clinic name, tagline, address, working hours, slot duration, prescription feature flag)
