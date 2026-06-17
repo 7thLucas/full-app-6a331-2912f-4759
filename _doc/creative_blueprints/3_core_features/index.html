@@ -1,0 +1,85 @@
+<style>
+  .sl-page {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .mode-landscape .sl-page { padding: 2.5rem 3rem 2.25rem 3rem; }
+  .mode-portrait .sl-page { padding: 2rem; }
+
+  .sl-header-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+  }
+  .mode-portrait .sl-header-row { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+
+  .sl-grid {
+    display: grid;
+    gap: 1rem;
+    flex: 1;
+  }
+  .mode-landscape .sl-grid { grid-template-columns: repeat(4, 1fr); }
+  .mode-portrait .sl-grid { grid-template-columns: repeat(2, 1fr); }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-page">
+
+    <!-- Header row -->
+    <div class="sl-header-row">
+      <div>
+        <span class="inline-block bg-teal-50 text-teal-700 text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full border border-teal-200 mb-2">Core Features</span>
+        <h2 class="font-black text-slate-900 leading-tight" style="font-size:1.75rem;">Built for every role<br>in your clinic.</h2>
+      </div>
+      <!-- Persona chips -->
+      <div class="flex items-center gap-2">
+        <span class="px-3 py-1 bg-teal-600 text-white text-xs font-bold rounded-full">Clinic Admin</span>
+        <span class="px-3 py-1 bg-slate-100 text-slate-500 text-xs font-medium rounded-full">Doctor</span>
+        <span class="px-3 py-1 bg-slate-100 text-slate-500 text-xs font-medium rounded-full">Support Staff</span>
+      </div>
+    </div>
+
+    <!-- Feature cards grid -->
+    <div class="sl-grid">
+
+      <!-- Patient Records -->
+      <div class="bg-white border border-slate-100 rounded-2xl p-4 shadow-sm flex flex-col gap-3">
+        <div class="w-9 h-9 bg-teal-50 rounded-xl flex items-center justify-center text-lg">👤</div>
+        <div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">Patient Records</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">Complete patient profiles with medical history, allergies, and visit logs — one search away.</p>
+        </div>
+      </div>
+
+      <!-- Appointment Scheduling -->
+      <div class="bg-white border border-slate-100 rounded-2xl p-4 shadow-sm flex flex-col gap-3">
+        <div class="w-9 h-9 bg-teal-50 rounded-xl flex items-center justify-center text-lg">📅</div>
+        <div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">Appointment Scheduling</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">Book, reschedule, and cancel with real-time slot visibility and automatic conflict detection.</p>
+        </div>
+      </div>
+
+      <!-- Prescription Management — highlighted card -->
+      <div class="bg-teal-600 rounded-2xl p-4 shadow-sm flex flex-col gap-3">
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center text-lg" style="background: rgba(255,255,255,0.18);">💊</div>
+        <div>
+          <h3 class="font-bold text-white text-sm mb-1">Prescription Management</h3>
+          <p class="text-xs leading-relaxed" style="color: #99f6e4;">Issue and track prescriptions tied directly to patient records and consultation history.</p>
+        </div>
+      </div>
+
+      <!-- Patient Flow Dashboard -->
+      <div class="bg-white border border-slate-100 rounded-2xl p-4 shadow-sm flex flex-col gap-3">
+        <div class="w-9 h-9 bg-teal-50 rounded-xl flex items-center justify-center text-lg">📊</div>
+        <div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">Patient Flow Dashboard</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">Live status of today's appointments: waiting, in-consultation, and done — at a glance.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
