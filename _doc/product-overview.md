@@ -1,7 +1,7 @@
 # Product Overview
 
 ## Product Name
-*(Working title — to be confirmed during onboarding)*
+**Clinic Coordinator**
 
 ## What It Is
 A unified clinic management application built for small clinic administrators. It centralises patient records, appointment scheduling, and prescription management into a single streamlined workflow, reducing administrative friction and enabling staff to deliver faster, higher-quality care.
